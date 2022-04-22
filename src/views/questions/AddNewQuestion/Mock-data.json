@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "Question": "start date ?",
+      "Type": "GIQ",
+      
+      "Answer": " 1st september"
+    },
+    {
+      "id": 2,
+      "Question": "end data?",
+      "Type": "GIQ",
+      
+      "Answer": "jessica.warren@email.com"
+    },
+    {
+      "id": 3,
+      "Question": "Tony Frank",
+      "Type": "11 lesly road",
+       
+      "Answer": "tony.frank@email.com"
+    },
+    {
+      "id": 4,
+      "Question": "Jeremy Clark",
+      "Type": "333 miltown manor",
+      
+      "Answer": "jeremy.clark@email.com"
+    },
+    {
+      "id": 5,
+      "Question": "Raymond Edwards",
+      "Type": "99 blue acres",
+     
+      "Answer": "raymon.edwards@email.com"
+    }
+  ]

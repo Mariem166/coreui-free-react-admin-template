@@ -95,13 +95,13 @@ const Dashboard = () => {
         new: true,
         registered: 'Jan 1, 2021',
       },
-      country: { name: 'USA', flag: cifUs },
+     email:'Yiorgos Avraamu@medtech.Tn',
       usage: {
         value: 50,
         period: 'Jun 11, 2021 - Jul 10, 2021',
         color: 'success',
       },
-      payment: { name: 'Mastercard', icon: cibCcMastercard },
+     
       activity: '10 sec ago',
     },
     {
@@ -111,7 +111,7 @@ const Dashboard = () => {
         new: false,
         registered: 'Jan 1, 2021',
       },
-      country: { name: 'Brazil', flag: cifBr },
+    email:'Avram Tarasios@medtech.tn',
       usage: {
         value: 22,
         period: 'Jun 11, 2021 - Jul 10, 2021',
@@ -123,7 +123,7 @@ const Dashboard = () => {
     {
       avatar: { src: avatar3, status: 'warning' },
       user: { name: 'Quintin Ed', new: true, registered: 'Jan 1, 2021' },
-      country: { name: 'India', flag: cifIn },
+      email:'Quintin Ed@medtech.Tn'  ,
       usage: {
         value: 74,
         period: 'Jun 11, 2021 - Jul 10, 2021',
@@ -135,13 +135,13 @@ const Dashboard = () => {
     {
       avatar: { src: avatar4, status: 'secondary' },
       user: { name: 'Enéas Kwadwo', new: true, registered: 'Jan 1, 2021' },
-      country: { name: 'France', flag: cifFr },
+      email:'Enéas Kwadwo@smu.tn',
       usage: {
         value: 98,
         period: 'Jun 11, 2021 - Jul 10, 2021',
         color: 'danger',
       },
-      payment: { name: 'PayPal', icon: cibCcPaypal },
+      
       activity: 'Last month',
     },
     {
@@ -151,7 +151,7 @@ const Dashboard = () => {
         new: true,
         registered: 'Jan 1, 2021',
       },
-      country: { name: 'Spain', flag: cifEs },
+      email:'Agapetus.Tadeáš@smu.tn',
       usage: {
         value: 22,
         period: 'Jun 11, 2021 - Jul 10, 2021',
@@ -167,7 +167,7 @@ const Dashboard = () => {
         new: true,
         registered: 'Jan 1, 2021',
       },
-      country: { name: 'Poland', flag: cifPl },
+     email:'Friderik.Dávid@smu.tn',
       usage: {
         value: 43,
         period: 'Jun 11, 2021 - Jul 10, 2021',
@@ -406,9 +406,9 @@ const Dashboard = () => {
                       <CIcon icon={cilPeople} />
                     </CTableHeaderCell>
                     <CTableHeaderCell>User</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Country</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center">Email</CTableHeaderCell>
                     <CTableHeaderCell>Usage</CTableHeaderCell>
-                    <CTableHeaderCell className="text-center">Payment Method</CTableHeaderCell>
+                    <CTableHeaderCell className="text-center"> Action</CTableHeaderCell>
                     <CTableHeaderCell>Activity</CTableHeaderCell>
                   </CTableRow>
                 </CTableHead>
@@ -426,7 +426,8 @@ const Dashboard = () => {
                         </div>
                       </CTableDataCell>
                       <CTableDataCell className="text-center">
-                        <CIcon size="xl" icon={item.country.flag} title={item.country.name} />
+                     
+                        <strong>{item.email}</strong>
                       </CTableDataCell>
                       <CTableDataCell>
                         <div className="clearfix">
@@ -440,7 +441,16 @@ const Dashboard = () => {
                         <CProgress thin color={item.usage.color} value={item.usage.value} />
                       </CTableDataCell>
                       <CTableDataCell className="text-center">
-                        <CIcon size="xl" icon={item.payment.icon} />
+                      <CButton
+                    
+                      >
+                        modify
+                      </CButton>
+                      <CButton
+                    
+                      >
+                        delete
+                      </CButton>
                       </CTableDataCell>
                       <CTableDataCell>
                         <div className="small text-medium-emphasis">Last login</div>

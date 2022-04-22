@@ -1,4 +1,5 @@
 import React from 'react'
+ 
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
@@ -49,7 +50,9 @@ const Modals = React.lazy(() => import('./views/notifications/modals/Modals'))
 const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
-
+const Allquestions = React.lazy(() => import('./views/questions/Allquestions/Allquestions'))
+const AddNewQuestion = React.lazy(() => import('./views/questions/AddNewQuestion'))
+const Deletequestion = React.lazy(() => import('./views/questions/Deletequestion'))
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
@@ -94,7 +97,11 @@ const routes = [
   { path: '/notifications/badges', name: 'Badges', element: Badges },
   { path: '/notifications/modals', name: 'Modals', element: Modals },
   { path: '/notifications/toasts', name: 'Toasts', element: Toasts },
-  { path: '/widgets', name: 'Widgets', element: Widgets },
+  { path: ' /questions', name: 'questions', element:Allquestions,exact:true },
+  { path: '/questions/Allquestions', name: 'All questions', element: Allquestions},
+  { path: '/questions/AddNewQuestion', name: ' Add New Question', element: AddNewQuestion},
+  { path: '/questions/Deletequestion', name: ' Delete question', element: Deletequestion},
+  
 ]
 
 export default routes

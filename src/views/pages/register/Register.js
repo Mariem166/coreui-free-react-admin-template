@@ -55,10 +55,20 @@ const Register = () => {
                       autoComplete="new-password"
                     />
                   </CInputGroup>
+                 
                   <div className="d-grid">
-                    <CButton color="success">Create Account</CButton>
+                     
+                       <CButton >
+                        Create Account
+                    
+                       </CButton>
+                     
+                    
+                    
+                    
+                     
                   </div>
-                </CForm>
+              </CForm>
               </CCardBody>
             </CCard>
           </CCol>
